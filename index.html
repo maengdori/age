@@ -206,19 +206,24 @@
 
     /* --- 하단 전광판 영역 --- */
     .notice-bar {
-      background: linear-gradient(90deg, rgba(37, 99, 235, 0.85) 0%, rgba(37, 99, 235, 0.7) 100%);
-      color: rgba(255, 255, 255, 0.85);
-      font-size: 14px;
-      font-weight: 600;
-      height: 36px;
-      overflow: hidden;
-      position: relative;
-      display: flex;
-      align-items: center;
-      width: 100%;
-      border-radius: 0;
-      user-select: none;
-    }
+background: linear-gradient(90deg, rgba(139, 92, 246, 0.9) 0%, rgba(168, 85, 247, 0.9) 100%);
+  color: rgba(255, 255, 255, 0.85);
+  font-size: 14px;
+  font-weight: 600;
+  height: 36px;
+  overflow: hidden;
+  position: fixed;        /* 화면 하단 고정 */
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  align-items: center;
+  width: 100%;
+  max-width: 380px;       /* 카드 너비와 맞춤 */
+  border-radius: 0;
+  z-index: 999;
+  user-select: none;
+}
 
     .scroll-text {
       position: absolute;
